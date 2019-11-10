@@ -1,15 +1,33 @@
-.right-eye {
-
+#right-ear {
+  transform: translateY(0);
+  transition: all .5s linear;
 }
 
-.left-eye {
-
+#left-ear {
+  transform: translateY(0);
+  transition: all .5s linear;
 }
 
-.right-ear {
-
+#bear:hover #left-ear,
+#bear:hover #right-ear {
+  transform: translateY(-15px);
 }
 
-.left-ear {
+#right-eye {
+  animation: creeping 3s linear infinite;
+}
 
+#left-eye {
+  animation: creeping 3s linear infinite;
+}
+
+@keyframes creeping {
+
+  0% {
+    transform: translateX(-15px);
+  }
+
+  100% {
+    transform: translateX(15px);
+  }
 }
